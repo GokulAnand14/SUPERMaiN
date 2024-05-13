@@ -19,7 +19,7 @@ st.markdown(hide_St, unsafe_allow_html=True)
 
 def main():
     st.title("supermAIn")
-    st.write("Enter image URL, Enter Prompt, Select Style, Click Generate and Get your Image")
+    st.write("Enter image URL, Enter Prompt, Select Style in the SETTINGS menu at the TOP LEFT corner(>), Click Generate here and Get your Image")
     
     st.sidebar.header("Settings")
     image_urls = st.sidebar.text_area("Image URLs (comma-separated)", value="", height=100)
@@ -33,7 +33,7 @@ def main():
             
             or you can just "copy image link" from google :)
         ''')
-    prompt = st.sidebar.text_input("Prompt(use the trigger word 'img' in your prompt)", value="man img as an astronaut, profile picture, zoomed in, facing camera")
+    prompt = st.sidebar.text_input("Prompt(NOTE: use the trigger word 'img' in your prompt)", value="man img as an astronaut, profile picture, zoomed in, facing camera")
     negative_prompt = st.sidebar.text_input("Negative Prompt", value="bad quality, bad anatomy, worst quality, low quality, lowres, extra fingers, blur, blurry, ugly, wrong proportions, watermark, image artifacts, bad eyes")
     style_template = st.sidebar.selectbox("Style Template", ['(No style)', 'Cinematic', 'Disney Charactor', 'Digital Art', 'Photographic (Default)', 'Fantasy art', 'Neonpunk', 'Enhance', 'Comic book', 'Lowpoly', 'Line art'])
     num_sample_steps = st.sidebar.slider("Number of Sample Steps", min_value=20, max_value=100, value=60)
