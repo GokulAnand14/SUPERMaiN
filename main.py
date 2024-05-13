@@ -61,6 +61,8 @@ def main():
         st.page_link("https://twitter.com/not_gallium", label="🔵Follow me on 𝕏", icon="❎")
         st.page_link("https://youtube.com/@GAllium14", label="🔴Subscribe to my YT channel", icon="📺")
         st.page_link("https://github.com/GokulAnand14/SUPERMaiN", label="🌟Open-Source on GitHub", icon="🔓")
+        st.page_link("https://huggingface.co/TencentARC/PhotoMaker", label="🖼Powered By TencentARC/PhotoMaker", icon="⚡")
+        st.write("made with ❤ in INDIA🇮")
 
         # Extract image URLs from the result
         image_urls = [item['image'] for item in result[0]]
