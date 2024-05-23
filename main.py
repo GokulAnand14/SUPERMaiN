@@ -45,7 +45,7 @@ def main():
     if st.button("Generate"):
         st.write("⏳ PLEASE WAIT, IT MAY TAKE A LONG TIME ⏳")
         image_urls_list = [url.strip() for url in image_urls.split(",")]
-        client = Client("https://tencentarc-photomaker-style.hf.space/--replicas/bq6uf/")
+        client = Client("https://tencentarc-photomaker-style.hf.space/--replicas/15djk/")
         result = client.predict(
             image_urls_list,
             prompt,
